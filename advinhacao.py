@@ -1,8 +1,8 @@
 print('***********************\nBem vindo ao jogo de adivinhação!\n***********************')
 numero_secreto = 42
 total_de_tentativas = 3
-rodada = 1
-while(rodada <= 3 ):
+
+for rodada in range(1,total_de_tentativas+1):
 
     print('Rodada {0}/{1}'.format(rodada,total_de_tentativas))
     chute = int(input('digite um numero:'))
@@ -12,13 +12,14 @@ while(rodada <= 3 ):
     
     if(acertou):
         print('Parabés voce acertou!')
-        rodada = 4
+        break
+        
     else:
         if(maior):
             print('Meu número é menor que {}'.format(chute))
         elif(menor):
             print('Meu número é maior que {}'.format(chute))
-        rodada = rodada + 1
+        
     
 
 print('Fim do jogo!')        
