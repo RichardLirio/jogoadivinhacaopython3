@@ -1,10 +1,10 @@
 import random
-print('***********************\nBem vindo ao jogo de adivinhação!\n***********************')
+print('*********************************\nBem vindo ao jogo de adivinhação!\n*********************************')
 numero_secreto = random.randrange(1,100)
 total_de_tentativas= 0
 pontos = 100
 
-print('Qual nivel de dificuldade?')
+print('Qual nivel de dificuldade?', numero_secreto)
 print('(1)Fácil (2)Médio (3)Difícil')
 
 nivel =int(input('Defina o nivel:'))
@@ -27,8 +27,8 @@ for rodada in range(1,total_de_tentativas+1):
         print('Voce deve digitar um numero entre 1 e 100!')
     else:
         if(acertou):
-            print('Parabés voce acertou!')
-            pontos = abs(pontos - (rodada -1))
+            pontos = abs(pontos - (rodada-1))
+            print('PARABENS VOCÊ ACERTOU!\n**Fim do jogo**\nVocê fez {} pontos!'.format(pontos))
             break
             
         else:
@@ -39,7 +39,7 @@ for rodada in range(1,total_de_tentativas+1):
             
 if(rodada >= total_de_tentativas):
     if(acertou):
-        print('Fim do jogo!\nMeu numero era {}\nVocê fez {} pontos!'.format(numero_secreto, pontos))
+        acertou
     else:    
         pontos = 0
-        print('Fim do jogo!\nMeu numero era {}\nVocê fez {} pontos!'.format(numero_secreto, pontos))      
+        print('**Fim do jogo!**\nMeu numero era {}\nVocê fez {} pontos!'.format(numero_secreto, pontos)) 
