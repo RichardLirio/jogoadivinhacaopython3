@@ -25,4 +25,4 @@ for rodada in range(1,total_de_tentativas+1):
         
     
 
-print('Fim do jogo!\nMeu numero era {}'.format(numero_secreto))        
+print('Fim do jogo!\nMeu numero era {}!'.format(numero_secreto))        
