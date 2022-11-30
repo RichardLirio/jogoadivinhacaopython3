@@ -4,7 +4,7 @@ numero_secreto = random.randrange(1,100)
 total_de_tentativas= 0
 pontos = 100
 
-print('Qual nivel de dificuldade?', numero_secreto)
+print('Qual nivel de dificuldade?')
 print('(1)Fácil (2)Médio (3)Difícil')
 
 nivel =int(input('Defina o nivel:'))
