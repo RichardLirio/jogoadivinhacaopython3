@@ -43,4 +43,7 @@ def jogar():
             acertou
         else:    
             pontos = 0
-            print('**Fim do jogo!**\nMeu numero era {}\nVocê fez {} pontos!'.format(numero_secreto, pontos)) 
+            print('**Fim do jogo!**\nMeu numero era {}\nVocê fez {} pontos!'.format(numero_secreto, pontos))
+
+if(__name__ == '__main__'):
+    jogar()
